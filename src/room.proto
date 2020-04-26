@@ -1,0 +1,6 @@
+syntax = "proto3";
+
+
+message Room { // next = 2
+  double squarefeet = 1;
+}

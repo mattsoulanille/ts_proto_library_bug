@@ -1,0 +1,19 @@
+package(default_visibility = ["//visibility:public"])
+load("@rules_proto//proto:defs.bzl", "proto_library")
+load("@npm_bazel_labs//:index.bzl", "ts_proto_library")
+
+proto_library(
+    name = "room_proto",
+    srcs = ["room.proto"],
+)
+
+proto_library(
+    name = "house_proto",
+    srcs = ["house.proto"],
+    deps = [":room_proto"],
+)
+
+ts_proto_library(
+    name = "house_ts_proto",
+    proto = ":house_proto",
+)

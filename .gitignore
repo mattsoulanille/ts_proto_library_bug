@@ -1,0 +1,7 @@
+node_modules
+bazel-bin
+bazel-out
+bazel-testlogs
+bazel-ts_proto_library_bug
+
+*~

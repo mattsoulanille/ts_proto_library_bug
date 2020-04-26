@@ -1,0 +1,17 @@
+{
+    "name": "ts_proto_library_bug",
+    "version": "0.1.0",
+    "private": true,
+    "devDependencies": {
+        "@bazel/bazel": "^2.1.0",
+        "@bazel/typescript": "1.6.0"
+    },
+    "scripts": {
+        "build": "bazel build //...",
+        "clean": "bazel clean"
+    },
+    "dependencies": {
+        "@bazel/labs": "^1.6.0",
+        "google-protobuf": "^3.11.4"
+    }
+}

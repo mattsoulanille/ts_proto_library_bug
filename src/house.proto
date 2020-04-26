@@ -1,0 +1,6 @@
+syntax = "proto3";
+import "src/room.proto";
+
+message House { // next = 2
+  Room kitchen = 1;
+}
