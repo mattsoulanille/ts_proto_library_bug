@@ -8,7 +8,8 @@
     },
     "scripts": {
         "build": "bazel build //...",
-        "clean": "bazel clean"
+        "clean": "bazel clean",
+		"bazel-version": "bazel version"
     },
     "dependencies": {
         "@bazel/labs": "^1.6.0",
