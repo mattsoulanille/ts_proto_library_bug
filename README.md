@@ -5,8 +5,8 @@
 `yarn build`
 
 Then, if you check `bazel-out/k8-fastbuild/bin/src/house_pb.d.ts`, you'll see the following TypeScript declaration file.
-Note that the room proto's type is imported as `src_room_pb` but `getKitchen()` returns the type `src_room_pbRoom`, which
-has no definition.
+The bug is that the room proto's type is imported as `src_room_pb` but `getKitchen()` returns the type `src_room_pbRoom`,
+which has no definition and is the incorrect return type.
 
 ```typescript
 import * as jspb from "google-protobuf"
